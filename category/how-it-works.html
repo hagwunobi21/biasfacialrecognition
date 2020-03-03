@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Bias Facial Recognition - How It Works</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Bias Facial Recognition</a></h1>
+                <nav><ul>
+                    <li><a href="/category/bias.html">Bias</a></li>
+                    <li class="active"><a href="/category/how-it-works.html">How It Works</a></li>
+                    <li><a href="/category/introduction.html">Introduction</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/how-does-facial-recognition-work.html">How Does Facial Recognition Work?</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2020-03-02T19:30:00-05:00">
+                Published: Mon 02 March 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hannah-agwunobi.html">Hannah Agwunobi</a>
+        </address>
+<p>In <a href="/category/how-it-works.html">How It Works</a>.</p>
+
+</footer><!-- /.post-info --><h1>Crash Course: How Does Facial Recognition Work?</h1>
+<p>Facial Recognition is a subfield of Image Recognition and Computer Vision that relies on several steps in order to identify faces in images. So, how does this technology work?</p>
+<p>In order to "recognize" a face in an input image, facial recognition technologies first have to identify where, if anywhere, faces are located in the image. If a face is found, the facial recognition system will re-orient the face to a pre-set standardized position. Afterwards, the system will create what's called a "faceprint" based on the results of inputting the face into a Convolutional Neural Network. This numerical "faceprint" will be a set of over 100 computer-determined numerical characteristics measured from each face that, similar to a fingerprint, uniquely defines it. These defining characteristics vary slightly over different algorithms, but normally consist of things like:</p>
+<ul>
+<li>Width of the nose</li>
+<li>Depth of eye sockets</li>
+<li>Shape of cheekbones</li>
+<li>Distance between eyes</li>
+</ul>
+<p>Finally, this faceprint will be compared to a stored database of faceprints, and if it's close enough to any of them the system will output a match or probability of a match.</p>
+<p>Now that we've gotten a general overview, you might be wondering what a Convolutional Neural Network (CNN) is? Let's take a look.</p>
+<p>First, we should look more generally at neural networks. A neural network is designed to parallel the brain activity of living things; biological neural networks consist of synapses that react when "activated" by experiences/memories. Artificial neural networks mirror biological neurons through collections of connected nodes called neurons or "perceptrons".</p>
+<p><img alt="Neural Network Example" src="images/Neural_Network_Example.jpg"></p>
+<p>The goal of a neural network is to estimate some output given several input characteristics. This input passes through layers of "neurons" designed to bring us to a more accurate result, and each "neuron" has a numerical weight that has some affect on the output. For example, if you were given the number of bedrooms, square feet, and neighborhood of an apartment in an attempt to estimate the price, one layer of a neural network might look like this:</p>
+<p><img alt="Neural Network Apartment Example" src="images/Neural_Network_Apartment.jpg"></p>
+<p>An actual neural network would consist of passing the input through more layers until the final estimate was found, which would look something like the following.</p>
+<p><img alt="Neural Network Apartment Layer Example" src="images/sLayer_Example.jpg"></p>
+<p>So, now that we understand a little bit more about what a neural network looks like, let's come back to Convolutional Neural Networks. Convolutional Neural Networks differ from traditional neural networks in that they use a three dimensional structure where the neurons of one layer don't all connect to all the neurons of the next layer. Rather, each neuron analyzes a specific "feature" or subset of the image, which helps to determine the faceprint we referred to earlier.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
